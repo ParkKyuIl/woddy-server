@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    include: oauth, prod, oauth, confidential, fcm, swagger
+    active: prod
+logging:
+  level:
+    io.swagger: DEBUG
+    org:
+      springframework:
+        security: DEBUG
+        web: DEBUG
+workout:
+  csv-path: classpath:/workouts.csv
+
+
